@@ -21,9 +21,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        # cache-dependency-path: my-app/package-lock.json
+        cache-dependency-path: my-app/package-lock.json
     - run: npm i
-      # working-directory: my-app
+      working-directory: my-app
     - run: npm run build --if-present
            cp -r build/* /var/www/my_app/html
-      # working-directory: my-app
+      working-directory: my-app

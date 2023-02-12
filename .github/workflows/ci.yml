@@ -25,5 +25,5 @@ jobs:
     - run: npm i
       working-directory: my-app
     - run: npm run build --if-present
-           cp -r build/* /home/cashin/react_app
+          #  cp -r build/* /var/www/html
       working-directory: my-app
